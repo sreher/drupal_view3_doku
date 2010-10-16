@@ -23,3 +23,5 @@ This is because these fields sort purely by characters, and not numeric value. i
 <dt>Date fields</dt>
 <dd>Date fields often can have a 'granularity', which is a way of making similar dates actually be the same date. Take two dates that are close to each other: <strong>May 1, 2007 5:30 am</strong> and <strong>May 1, 2007 9:45am</strong>. Without granularity, the two dates are compared and the first date comes before the second date. However, if the granularity is set to 'day' it only looks at the parts of the date up to the day: <strong>May 1, 2007</strong> and <strong>May 1, 2007</strong>. At that point, they are the same, and the sort would move on to the next sort criterion.</dd>
 </dl>
+
+You can override the complete sort criteria section - see <a href="topic:views/overrides">here</a> for more information.
