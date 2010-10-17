@@ -5,6 +5,8 @@ When setting the table options, each field in the view will be presented with so
 <dl>
 <dt> <strong>Column</strong> </dt>
 <dd> By default, each field is its own column. However, you can place multiple fields in the same column. To do this, pick which field you want to represent the column, then pick another field and set the 'column' value to that field. You can place as many fields as you like in a single column, but only the main field in a column can be click-sorted.</dd>
+<dt> <strong>Align</strong> </dt>
+<dd> You can choose how the field should be rendered in the column. There are four option: None, Left, Center, Right.</dd>
 <dt> <strong>Separator</strong> </dt>
 <dd> If you have multiple fields in the same column, the separator will be placed between each one. At the very least, &amp;nbsp; should be used, as without the separator the fields will be placed very close to each other. Common separators are a bullet, the | symbol, and a comma. If there are no other fields in the column, the separator will have no effect.</dd>
 <dt> <strong>Sortable</strong> </dt>
@@ -12,3 +14,10 @@ When setting the table options, each field in the view will be presented with so
 <dt> <strong>Default sort</strong> </dt>
 <dd> You may select a column which will be sorted by default when the table is first viewed. This column will be highlighted to the user. You may also select whether the default sort is ascending or descending.</dd>
 </dl>
+
+<h3>Grouping field</h3>
+You may optionally specify a field by which to group the records. This grouping field will be displayed as a header, and all rows will be displayed beneath it.
+
+There are two more option "Override normal sorting if click sorting is used" and "Enable Drupal style "sticky" table headers (Javascript)". The first override the settings in the <a href="topic:views/sort">sort criteria</a> Section for this table. The second is useful when you have a big table with lots of rows. When you scroll down you don't see the header string. When you select this option, javascript will show the header on the top of the window.
+
+At long last you can choose the default sort order in the table.
